@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>国内折扣</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/inlanddiscount.css">
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="download_box fr">
+      <a href="javascript">
+        <img src="images/header_app.png">
+      </a>
+    </div>
+    <div class="go-back fl">
+      <a href="javascript:history.go(-1);"><</a>
+    </div>
+    <div class="top-title">
+      <h3>国内折扣</h3>
+    </div>
+  </div>
+  <div class="product-list">
+    <ul class="clearfix">
+
+    </ul>
+  </div>
+  <div class="footer">
+    <div class="foot_top">
+      <ul class="clearfix">
+        <li class="w33 fl"><a href="javascript:;">登录</a></li>
+        <li class="w33 fl"><a href="javascript:;">注册</a></li>
+        <li class="w33 fl"><a href="#"><img src="images/top.jpg">返回顶部</a></li>
+      </ul>
+    </div>
+    <div class="foot_title">
+      <p>
+        <a href="javascript:;">
+          手机APP下载
+        </a>
+        <a href="javascript:;">
+          慢慢买手机版
+        </a>
+        -- 掌上比价平台
+      </p>
+      <p>
+        m.manmanbuy.com
+      </p>
+    </div>
+  </div>
+</div>
+</body>
+<script src="js/rem.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/inlanddiscount.js"></script>
+<script type="text/html" id="tpl">
+  {{each result v i}}
+  <li class="fl w50">
+    <a href="discount.html?productid={{v.productId}}">
+      <div class="img_box">
+        {{#v.productImg}}
+      </div>
+      <div class="info_box">
+        <p class="title txt-cut">{{v.productName}}</p>
+        <p class="price one-txt-cut">{{v.productPrice}}</p>
+        <p class="info">{{v.productFrom}} | {{v.productTime}}</p>
+      </div>
+    </a>
+  </li>
+  {{/each}}
+</script>
+</html>

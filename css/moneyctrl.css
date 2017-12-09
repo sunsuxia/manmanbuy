@@ -1,0 +1,81 @@
+.top-title {
+   overflow: hidden;
+   line-height: 2.5rem;
+   text-align: center;
+   color: white;
+   font-size: 1.125rem;
+ }
+.go-back a {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  color: white;
+  font-family: "宋体";
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.product li {
+  padding: 0.75rem;
+  background-color: #fff;
+  border-bottom: 1px solid #dddddd;
+}
+.product li a {
+  display: block;
+}
+.product .img_box img {
+  height: 5rem;
+  margin-top: 0.625rem;
+}
+.product .info_box {
+  padding-left: 5rem;
+}
+.product .info_box p {
+  font-size: 0.75rem;
+  padding-left: 0.5rem;
+}
+.product .info_box p:first-child {
+  height: 3.75rem;
+}
+.product .info_box > span {
+  color: red;
+  font-size: 0.75rem;
+  padding-left: 0.5rem;
+}
+.product .info_box p:last-child {
+  height: 1.25rem;
+}
+.product .info_box p:last-child span {
+  color: #ccc;
+}
+.product .info_box img {
+  width: 0.75rem;
+  position: relative;
+  bottom: 0.05rem;
+}
+.page {
+  margin-top: 0.5rem;
+}
+.page li {
+  padding: 0.5rem;
+}
+.page a {
+  font-size: 0.75rem;
+  border-radius: 5px;
+  line-height: 2rem;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-image: linear-gradient(to bottom,#f1f1f1,#d4d4d4);
+}
+.page select {
+  height: 2rem;
+  width: 100%;
+  font-size: 0.75rem;
+  padding:0 1rem;
+}
+.page select option {
+  font-size: 0.75rem;
+}

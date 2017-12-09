@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>首页</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="download_box fr">
+      <a href="javascript">
+        <img src="images/header_app.png">
+      </a>
+    </div>
+    <div class="logo_box">
+      <a href="index.html">
+        <img src="images/header_logo.png">
+      </a>
+    </div>
+  </div>
+  <div class="search">
+    <button class="search_btn fr">搜索</button>
+    <div class="search_input">
+      <input type="text" placeholder="请输入你想比价的商品">
+    </div>
+  </div>
+  <div class="menu">
+    <ul class="clearfix">
+      <!--占位-->
+    </ul>
+  </div>
+  <div class="recomen">
+    <span>超值折扣推荐</span>
+    <a href="javascript:;" class="fr">
+      <img src="images/more.png">
+    </a>
+  </div>
+  <div class="product">
+    <ul>
+
+    </ul>
+  </div>
+  <div class="more-bar">
+    <a href="moneyctrl.html">更多优惠信息 »</a>
+  </div>
+  <div class="recomen">
+    <span>品牌排行</span>
+    <a href="javascript:;" class="fr">
+      <img src="images/more.png">
+    </a>
+  </div>
+  <div class="footer">
+    <div class="foot_top">
+      <ul class="clearfix">
+        <li class="w33 fl"><a href="javascript:;">登录</a></li>
+        <li class="w33 fl"><a href="javascript:;">注册</a></li>
+        <li class="w33 fl"><a href="#"><img src="images/top.jpg">返回顶部</a></li>
+      </ul>
+    </div>
+    <div class="foot_title">
+      <p>
+        <a href="javascript:;">
+          手机APP下载
+        </a>
+        <a href="javascript:;">
+          慢慢买手机版
+        </a>
+        -- 掌上比价平台
+      </p>
+      <p>
+        m.manmanbuy.com
+      </p>
+    </div>
+  </div>
+</div>
+</body>
+<script src="js/rem.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/index.js"></script>
+<script type="text/html" id="menu_tpl">
+  {{each result v i}}
+  <li class="fl w25 {{i > 7 ? 'hide' : ''}}">
+    <a href="{{v.titlehref}}">
+      <img src="{{v.picAddr}}">
+    </a>
+    <p>{{v.name}}</p>
+  </li>
+  {{/each}}
+</script>
+<script type="text/html" id="pro_tpl">
+  {{each result v i}}
+  <li class="clearfix">
+    <a href="moneyproduct.html?productid={{v.productId}}">
+      <div class="img_box fl">
+        {{#v.productImgLg}}
+      </div>
+      <div class="info_box">
+        <p class="txt-cut">
+          {{v.productName}}
+        </p>
+        <span class="one-txt-cut">{{v.productPinkage}}</span>
+        <p>
+          <span>{{v.productFrom}} | {{v.productTime}}</span>
+          <span class="fr"><img src="images/comment.svg">{{v.count}}</span>
+        </p>
+      </div>
+    </a>
+  </li>
+  {{/each}}
+</script>
+</html>

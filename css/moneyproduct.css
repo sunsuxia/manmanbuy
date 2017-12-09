@@ -1,0 +1,147 @@
+.container {
+  background-color: #fff;
+}
+.footer {
+  background-color: #f0f0f0;
+}
+.top-title {
+  overflow: hidden;
+  line-height: 2.5rem;
+  text-align: center;
+  color: white;
+  font-size: 1.125rem;
+}
+.go-back a {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  color: white;
+  font-family: "宋体";
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.pro-main {
+  padding: 0.5rem;
+}
+.pro-title {
+  color: #5a5a5a;
+  font-size: 1.05rem;
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+.pro-info {
+  font-size: 0.625rem;
+  color: #aaa;
+  margin: 0.6rem 0;
+}
+.pro-info span {
+  margin: 0.25rem;
+}
+.pro-content .img-wrap img {
+  width: 6rem;
+}
+.pro-content p {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  min-height: 6rem;
+}
+.address {
+  width: 7rem;
+  margin: 0 auto;
+}
+.address {
+  padding: 0 0.5rem;
+  font-size: 0.625rem;
+  border-width: 0 1px 1px 1px;
+  border-color: #f1f1f1 #f1f1f1 #dbdbdb #f1f1f1;
+  box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
+}
+.address li {
+  border-bottom: 1px dashed #cccccc;
+  padding: 0.25rem;
+}
+.address span strong {
+  float: right;
+  font-weight: normal;
+  color: #f27b04;
+}
+.go-buy {
+  padding: 1rem;
+}
+.go-buy a {
+  display: block;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: white;
+  background-color: #FF9000;
+  border-radius: 5px;
+}
+.two-code {
+  text-align: center;
+  padding: 1rem 0;
+}
+.two-code img {
+  width: 17.5rem;
+  display: inline-block;
+}
+.comment .tit {
+  padding: 0.6rem 0.8rem;
+  font-size: 0.875rem;
+}
+.comment .reply {
+  padding: 0.6rem 0.8rem;
+}
+.comment .form {
+  border: 2px solid #ECEAE8;
+  border-radius: 5px;
+}
+.comment .form textarea {
+  width: 100%;
+  resize: none;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 0.625rem;
+}
+.comment .ctrl {
+  text-align: right;
+}
+.comment .form input {
+  border: none;
+  outline: none;
+  background-color: #ff841d;
+  color: white;
+  display: inline-block;
+  width: 5rem;
+  height: 2rem;
+  line-height: 2rem;
+}
+.list li {
+  padding: 0.9rem 0.8rem;
+}
+.list .userimg {
+  float: left;
+}
+.list .userimg img {
+  width: 2rem;
+  border-radius: 50%;
+}
+.list .con {
+  overflow: hidden;
+  height: 2rem;
+  font-size: 0.625rem;
+  padding-left: 0.5rem;
+  line-height: 1.1rem;
+}
+.list .con .username {
+  color: #5997c0;
+  float: left;
+}
+.list .con .time {
+  float: right;
+  color: #aaa;
+}

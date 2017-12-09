@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>品牌详情</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/brand.css">
+</head>
+<body>
+<div class="header">
+    <div class="download_box fr">
+        <a href="javascript">
+            <img src="images/header_app.png">
+        </a>
+    </div>
+    <div class="logo_box">
+        <a href="index.html">
+            <img src="images/header_logo.png">
+        </a>
+    </div>
+</div>
+
+<div class="search">
+    <button class="search_btn fr">搜索</button>
+    <div class="search_input">
+        <input type="text" placeholder="请输入你想比价的商品">
+    </div>
+</div>
+<!--内容-->
+
+<div id="category" class="model">
+    <nav class="product-list-title"> <a href="index.html" class="list-title1">首页</a> &gt; <a href="category.html" class="list-title2">全部分类</a> &gt; </nav>
+    <div class="hd">
+        <h3>平板电视哪个牌子好</h3>
+    </div>
+    <div class="row clearfix brand-list">
+        <!--挖个坑-->
+    </div>
+    <div class="hd">
+        <h3><a href="prolist.aspx?id=4">平板电视产品销量排行</a></h3>
+    </div>
+
+    <div class="product-list">
+        <!--挖个坑-->
+
+
+    </div>
+
+    <div class="hd">
+        <h3><a href="listComment.aspx?id=4" title="平板电视最新评论">平板电视最新评论</a></h3>
+    </div>
+    <div class="bd pllist product-com">
+        <!--挖个坑-->
+    </div>
+</div>
+
+
+
+<div class="footer">
+    <div class="foot_top">
+        <ul class="clearfix">
+            <li class="w33 fl"><a href="javascript:;">登录</a></li>
+            <li class="w33 fl"><a href="javascript:;">注册</a></li>
+            <li class="w33 fl"><a href="#"><img src="images/top.jpg">返回顶部</a></li>
+        </ul>
+    </div>
+    <div class="foot_title">
+        <p>
+            <a href="javascript:;">
+                手机APP下载
+            </a>
+            <a href="javascript:;">
+                慢慢买手机版
+            </a>
+            -- 掌上比价平台
+        </p>
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+</div>
+<!--模板引擎一-->
+<script type='text/html' id='tpl'>
+    <ul class="category-title">
+        {{each result  v i}}
+        <li><a href="productlist.html?categoryid={{v.categoryId}}&pageid=1" title="三星平板电视"><em class="top{{i+1}}">{{i+1}}</em><div class="inner"><div class="tit">{{v.brandName}}</div><p>{{v.brandInfo}}</p></div></a></li>
+        {{/each}}
+    </ul>
+</script>
+
+<!--模板引擎二-->
+<script type='text/html' id='tpl2'>
+    <ul>
+        {{each result  v i}}
+        <li>
+            <a href="bijia.html?productid={{v.productId}}" title="{{v.productName}}">
+                <div class="pic">{{#v.productImg}}</div>
+                <div class="info">
+                    <div class="tit">{{v.productName}}</div>
+                    <div class="price"><em>{{v.productPrice}}</em> <span class="star"><em class="star5"></em></span></div>
+                    <div class="other"><em>{{v.productQuote}}</em><em>{{v.productCom}}</em></div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+
+
+
+</script>
+
+
+<!--模板引擎三-->
+<script type='text/html' id='tpl3'>
+    <ul>
+        {{each result v i}}
+        <li>
+            <a href="bijia.aspx?id=211698">
+                <div class="protit">
+                    <div class="pic"> {{#img}} </div>
+
+                    <div class="tit">{{v.productName}}</div>
+                </div>
+                <div class="plbox">
+                    <div class="name">{{v.comName}}：<span class="star"><em class="star5"></em></span><i>{{v.comTime}}</i></div>
+                    <div class="con">{{v.comContent}} 评论发布自 {{v.comFrom}}</div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+
+
+
+</script>
+
+    <script src="js/rem.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/common.js"></script>
+<script src="js/brand.js"></script>
+</body>
+</html>

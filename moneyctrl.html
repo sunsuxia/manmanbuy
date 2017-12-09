@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>省钱控</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/moneyctrl.css">
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="download_box fr">
+      <a href="javascript">
+        <img src="images/header_app.png">
+      </a>
+    </div>
+    <div class="go-back fl">
+      <a href="javascript:history.go(-1);"><</a>
+    </div>
+    <div class="top-title">
+      <h3>省钱控-最新优惠</h3>
+    </div>
+  </div>
+  <div class="product">
+    <ul>
+
+    </ul>
+  </div>
+  <div class="page">
+    <ul class="clearfix">
+      <li class="fl w33">
+        <a href="javascript:;" class="prev">上一页</a>
+      </li>
+      <li class="fl w33">
+        <select>
+
+        </select>
+      </li>
+      <li class="fl w33">
+        <a href="javascript:;" class="next">下一页</a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer">
+    <div class="foot_top">
+      <ul class="clearfix">
+        <li class="w33 fl"><a href="javascript:;">登录</a></li>
+        <li class="w33 fl"><a href="javascript:;">注册</a></li>
+        <li class="w33 fl"><a href="#"><img src="images/top.jpg">返回顶部</a></li>
+      </ul>
+    </div>
+    <div class="foot_title">
+      <p>
+        <a href="javascript:;">
+          手机APP下载
+        </a>
+        <a href="javascript:;">
+          慢慢买手机版
+        </a>
+        -- 掌上比价平台
+      </p>
+      <p>
+        m.manmanbuy.com
+      </p>
+    </div>
+  </div>
+</div>
+</body>
+<script src="js/rem.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/moneyctrl.js"></script>
+<script type="text/html" id="pro_tpl">
+  {{each result v i}}
+  <li class="clearfix">
+    <a href="moneyproduct.html?productid={{v.productId}}">
+      <div class="img_box fl">
+        {{#v.productImgSm}}
+      </div>
+      <div class="info_box">
+        <p class="txt-cut">
+          {{v.productName}}
+        </p>
+        <span class="one-txt-cut">{{v.productPinkage}}</span>
+        <p>
+          <span>{{v.productFrom}} | {{v.productTime}}</span>
+          <span class="fr"><img src="images/comment.svg">{{v.count}}</span>
+        </p>
+      </div>
+    </a>
+  </li>
+  {{/each}}
+</script>
+<script type="text/html" id="page_tpl">
+  <%for (var i = 1; i <= pages; i++) {%>
+  <%if (i == pageid) {%>
+  <option selected value="<%=i%>"><%=i%>/<%=pages%></option>
+  <%} else {%>
+  <<option value="<%=i%>"><%=i%>/<%=pages%></option>
+  <%}%>
+  <%}%>
+</script>
+</html>

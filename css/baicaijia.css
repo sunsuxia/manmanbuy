@@ -1,0 +1,131 @@
+.top-title {
+    overflow: hidden;
+    line-height: 2.5rem;
+    text-align: center;
+    color: white;
+    font-size: 1.125rem;
+}
+.go-back a {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    color: white;
+    font-family: "宋体";
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.header {
+    background-color: #f4483e;
+}
+.bcj-title {
+    background-color: #fff;
+    overflow: hidden;
+}
+.bcj-title ul {
+    min-width: 100%;
+    height: 2rem;
+}
+.bcj-title a {
+    display: block;
+    line-height: 1.9rem;
+    margin: 0 0.6rem;
+    border-bottom: 0.1rem solid transparent;
+    box-sizing: border-box;
+    font-size: 0.75rem;
+}
+.bcj-title li.now a {
+    border-color: #f4483e;
+    color: #f4483e;
+}
+.bcj-list li {
+    padding: 0.5rem 0.25rem;
+    margin: 0.25rem 0;
+    background-color: #fff;
+}
+.bcj-list .img_box {
+    width: 6.5rem;
+    height: 6.5rem;
+}
+.bcj-list .img_box img {
+    width: 6.5rem;
+}
+.bcj-list .info_box {
+    height: 6.5rem;
+    overflow: hidden;
+    padding-left: 0.5rem;
+}
+.bcj-list .info_box .title {
+    font-size: 0.8rem;
+}
+.bcj-list .info_box .price {
+    font-size: 1.1rem;
+    color: #fc353a;
+}
+.bcj-list .info_box .price i {
+    font-size: 0.9rem;
+}
+.bcj-list .info_box .price em {
+    font-size: 0.625rem;
+}
+.bcj-list .info_box .price del {
+    font-size: 0.75rem;
+    margin-left: 0.6rem;
+    color: #aaa;
+}
+.bcj-list .info_box .count i {
+    position: relative;
+    width: 4rem;
+    display: inline-block;
+    height: 0.7rem;
+    border: 1px solid #fc353a;
+    border-radius: 2000px;
+    background-color: #ffb7b7;
+}
+.bcj-list .info_box .count i em {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 2000px;
+    background-color: #fc353a;
+}
+.bcj-list .info_box .count i span {
+    position: absolute;
+    color: white;
+    top:0;
+    left: 0;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+    height: 100%;
+    font-weight: bold;
+}
+.bcj-list .info_box .count b {
+    font-weight: normal;
+    color: #fc353a;
+    font-size: 0.625rem;;
+    line-height: 0.625rem;;
+    position: relative;
+    bottom: 0.125rem;
+}
+.bcj-list .info_box .link a:first-child{
+    display: inline-block;
+    float: left;
+    font-size: 0.625rem;
+    padding: 0.25rem;
+    border: 1px dotted #fc353a;
+    color: #fc353a;
+}
+.bcj-list .info_box .link a:last-child{
+    display: inline-block;
+    float: right;
+    font-size: 0.625rem;
+    background-color: #ff5e5d;
+    color: white;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+}

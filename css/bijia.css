@@ -1,0 +1,117 @@
+.product-bijia {
+  background-color: #fff;
+}
+.product-title {
+  height: 2rem;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  background-image: linear-gradient(to bottom,#fff,#ededed);
+}
+.product-title p {
+  font-size: 0.75rem;
+  line-height: 2rem;
+  overflow: hidden;
+  padding-left: 0.2rem;
+}
+.product-title button {
+  height: 1.5rem;
+  width: 3.125rem;
+  margin-top: 0.25rem;
+  margin-right: 0.5rem;
+  border: none;
+  font-size: 0.625rem;
+  outline: none;
+  border-radius: 6px;
+  background-image: linear-gradient(to bottom,#d7d7d7,#f5f5f5);
+  box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+}
+.product-name {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
+.product-img img {
+  width: 8rem;
+  display: block;
+  margin: 0 auto;
+}
+.product-collect img {
+  width: 2rem;
+  position: relative;
+  bottom: 1rem;
+  right: 1.25rem;
+}
+.product-tab li {
+  height: 1.75rem;
+}
+.product-tab li a {
+  display: block;
+  text-align: center;
+  line-height: 1.75rem;
+  font-size: 0.875rem;
+  color: white;
+  background-color: #ffc117;
+  border-top: 1px solid #c74600;
+  border-bottom: 1px solid #c74600;
+  border-right: 1px solid #c74600;
+}
+.product-tab li:last-child a {
+  border-right: none;
+}
+.product-tab li:first-child a {
+  background-color: #ff940a;
+}
+.note {
+  border-top: 1px solid #ccc;
+  padding: 0.4rem 0.5rem;
+  font-size: 0.625rem;
+  color: #999;
+  line-height: 1.125rem;
+}
+.com-title {
+  text-align: center;
+  background-color: #dbdbdb;
+  height: 2rem;
+  box-sizing: border-box;
+  border-top: 0.3rem solid #666666;
+  line-height: 1.7rem;
+  font-size: 0.75rem;
+}
+.com-list li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+.com-list span {
+  font-size: 0.5rem;
+  color: #888;
+}
+.com-list p {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+.more-bar {
+  margin: 0.5rem;
+}
+.more-bar a {
+  width: 100%;
+  display: block;
+  text-align: center;
+  height: 1.625rem;
+  line-height: 1.625rem;
+  border: 1px solid #ddd;
+  background-color: #F4F4F4;
+  border-radius: 4px;
+  font-size: 0.625rem;
+}
+.product-plist td {
+  padding: 0.5rem;
+}
+.product-plist img {
+  width: 0.8rem;
+  position: relative;
+  bottom: 0.05rem;
+}
+.product-plist .p_pic a {
+  display: block;
+}

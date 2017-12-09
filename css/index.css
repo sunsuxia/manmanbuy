@@ -1,0 +1,88 @@
+.menu {
+  background-color: #fff;
+  padding: 0.5rem 0;
+  margin-bottom: 0.25rem;
+}
+.menu a {
+  display: block;
+}
+.menu li {
+  text-align: center;
+  margin-top: 0.75rem;
+}
+.menu img {
+  display: block;
+  margin: 0 auto;
+  height: 2.5rem;
+}
+.menu p {
+  margin-top: 0.125rem;
+  font-size: 0.625rem;
+}
+.recomen {
+  background-color: #ff9815;
+  height: 1.75rem;
+}
+.recomen span {
+  color: white;
+  font-size: 0.75rem;
+  line-height: 1.75rem;
+  margin-left: 0.5rem;
+}
+.recomen img {
+  display: block;
+  width: 1rem;
+  margin: 0.375rem;
+}
+.product li {
+  padding: 0.75rem;
+  background-color: #fff;
+  border-bottom: 1px solid #dddddd;
+}
+.product li a {
+  display: block;
+}
+.product .img_box img {
+  height: 5rem;
+  margin-top: 0.625rem;
+}
+.product .info_box {
+  padding-left: 5rem;
+}
+.product .info_box p {
+  font-size: 0.75rem;
+  padding-left: 0.5rem;
+}
+.product .info_box p:first-child {
+  height: 3.75rem;
+}
+.product .info_box > span {
+  color: red;
+  font-size: 0.75rem;
+  padding-left: 0.5rem;
+}
+.product .info_box p:last-child {
+  height: 1.25rem;
+}
+.product .info_box p:last-child span {
+  color: #ccc;
+}
+.product .info_box img {
+  width: 0.75rem;
+  position: relative;
+  bottom: 0.05rem;
+}
+.more-bar {
+  margin: 0.5rem;
+}
+.more-bar a {
+  width: 100%;
+  display: block;
+  text-align: center;
+  height: 1.625rem;
+  line-height: 1.625rem;
+  border: 1px solid #ddd;
+  background-color: #F4F4F4;
+  border-radius: 4px;
+  font-size: 0.625rem;
+}
